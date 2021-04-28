@@ -11,6 +11,7 @@
     --oppasity-white: rgba(255, 255, 255, 0.6);
     --head-border: #ececec;
     --customer-border: #AFB1B8;
+    --card-bg-color: #F5F4FA;
 }
 html{
     box-sizing: border-box;
@@ -277,7 +278,6 @@ img {
     margin-right: 30px;
     display: block;
     content: "";
-    height: 120px;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -303,6 +303,12 @@ img {
     justify-content: center;
     align-items: baseline;
 } 
+
+.feature-item{
+     width: 120px;
+ 
+    background-color: rgb(120, 173, 120);
+}
  
 .text{
     font-size: 14px;

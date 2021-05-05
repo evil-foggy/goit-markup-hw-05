@@ -99,7 +99,7 @@ img {
 }
 
 .page-active{
-    fill: var(--accent-color);
+    color: var(--accent-color);
 
 }
 

@@ -7,7 +7,10 @@
     <title>My WebDesighn</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/underline.css"/>
 </head>
 <body>
 
@@ -18,13 +21,13 @@
         <a href="./index.html" class="logo"><span class="web-logo">Web</span>Studio</a>
          <ul class="site-nav">
              <li class="list-header list">
-               <a href="./index.html" class="link">Студия</a>
+               <a href="./index.html" class=" menu-link page-active active">Студия</a>
              </li>
              <li class="list-header list">
-               <a href="./portfolio.html" class="link">Портфолио</a>
+               <a href="./portfolio.html" class="menu-link">Портфолио</a>
              </li>
              <li class="list-header list">
-               <a href="" class="link">Контакты</a>
+               <a href="" class="menu-link">Контакты</a>
              </li>
        </ul>
          <ul class="contacts list-header">
@@ -51,30 +54,30 @@
 <section class="hero overlay">
 <div class="container">
   <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-  <button type="button" class="button order">Заказать услугу</button> 
+  <button type="button" class="button order" data-modal-open>Заказать услугу</button> 
 </div>
 </section>
+
 <!--Особенности -->
 <section class="section">
   <div class="container">
     <h2 class="visually-hidden">Особенности</h2>
-
     <ul class="feature-list">
         <li class="list features">
           <div class="feature-item">
               <svg class="icon-feature">
-                <use href="./images/icon/sprite.svg#clock" ></use>
+                <use href="./images/icon/sprite.svg#clock"></use>
               </svg>
-          </div>
+            </div>
               <div class="feature-card">
                 <h3  class="sub-title">Внимание к деталям   </h3>
                 <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>  
               </div>
           
-</li>
+        </li>
 
         <li class="list features">
-          <div>
+          <div class="feature-item">
             <svg class="icon-feature">
               <use href="./images/icon/sprite.svg#diagram" ></use>
             </svg>
@@ -85,7 +88,7 @@
           </div>
         </li>
         <li class="list features">
-          <div>
+          <div class="feature-item">
             <svg class="icon-feature">
               <use href="./images/icon/sprite.svg#astronaut" ></use>
             </svg>
@@ -96,7 +99,7 @@
           </div>
         </li>
         <li class="list features">
-          <div>
+          <div class="feature-item">
             <svg class="icon-feature">
               <use href="./images/icon/sprite.svg#antenna" ></use>
             </svg>
@@ -110,18 +113,33 @@
   </div>
 </section>
 <!---->
-<section class="section">
+<section class="padding-section">
   <div class="container" >
     <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="work">
       <li class="list">
-        <img src="./images/img.jpg" alt="компьютери руки программиста" width="370" height="294" >
+        <div class="work-menu">
+          <img src="./images/img.jpg" alt="компьютери руки программиста" width="370" height="294" >
+          <div class="box-text">
+            <p class="menu-text">Десктопные приложения</p>
+          </div>
+        </div>
       </li>
       <li class="list">
-        <img src="./images/img1.jpg" alt="разработка для телефонов" width="370" height="294">
+        <div class="work-menu">
+          <img src="./images/img1.jpg" alt="разработка для телефонов" width="370" height="294">
+          <div class="box-text">
+            <p class="menu-text">Мобильные приложения</p>
+          </div>
+        </div>
       </li>
       <li class="list">
-        <img src="./images/img2.jpg" alt="дизайн на планшете" width="370" height="294">
+        <div class="work-menu">
+          <img src="./images/img2.jpg" alt="дизайн на планшете" width="370" height="294">
+          <div class="box-text">
+            <p class="menu-text">Дизайнерские решения</p>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
@@ -134,39 +152,39 @@
       <li class="list item-card">
         <img src="./images/port1.jpg" alt="ProductDesigner" width="270" height="260"  class="img-card">
           <div class="name-box">
-            <h3 class="name-title">Игорь Демьяненко</h3>
-            <p class="post-item">Product Designer</p>
-          <ul class="list social-icons">
-            <li class="social-icons-item">
-              <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon">
-                  <use href="./images/icon/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons-item">
-              <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon">
-                  <use href="./images/icon/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons-item">
-              <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon">
-                  <use href="./images/icon/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons-item">
-              <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon">
-                  <use href="./images/icon/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+              <h3 class="name-title">Игорь Демьяненко</h3>
+              <p class="post-item">Product Designer</p>
+              <ul class="list social-icons">
+                <li class="social-icons-item">
+                  <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon">
+                      <use href="./images/icon/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-item">
+                  <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon">
+                      <use href="./images/icon/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-item">
+                  <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon">
+                      <use href="./images/icon/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-item">
+                  <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon">
+                      <use href="./images/icon/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+          </div>
       </li>
       <li class="list item-card">
         <img src="./images/port2.jpg" alt="FrontendDeveloper"  width="270" height="260" class="img-card">
@@ -382,5 +400,13 @@
     </div>  
   </div>   
 </footer>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="btn-close" data-modal-close>
+      <img src="./images/icon/modal-close.svg" class="">
+    </button>
+  </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>

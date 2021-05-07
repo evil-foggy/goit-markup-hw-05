@@ -14,8 +14,7 @@
         border-radius: 2px;
     
         background-color: var(--accent-color);
-        display: none;
-    
+        
         opacity: 0;
         transition:  opacity 250ms var(--timing-function);
     }

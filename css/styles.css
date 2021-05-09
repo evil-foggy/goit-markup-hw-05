@@ -41,6 +41,10 @@ address{
 a {
     color: var(--primary-title-color);
     text-decoration: none;
+
+    transition: color 250ms var(--timing-function),
+                fill 250ms var(--timing-function);
+
 }
 
 .box{
@@ -117,6 +121,8 @@ img {
     align-items: center;
 
     fill: var(--primary-text-color);
+
+    transition: fill 250ms var(--timing-function);
 }
 
 .tel-link:hover,
@@ -198,6 +204,7 @@ img {
     font-size: 26px;
     line-height: 1.19;   
     color: var(--primary-title-color); 
+    transition: color 250ms var(--timing-function);
 }
 
 .web-logo{
@@ -642,7 +649,9 @@ text-transform: uppercase
     padding: 6px 22px;
     align-content: center;
     border: none;
-    
+
+    transition: color 250ms var(--timing-function),
+                background-color 250ms var(--timing-function);
 }
 
 .order{

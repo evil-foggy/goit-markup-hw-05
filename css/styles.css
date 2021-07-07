@@ -448,7 +448,9 @@ img {
 .work li + li{
     margin-left: 30px;
 }
-
+.social-bg{
+    background-color:  #F5F4FA;
+}
 .section-card{
     display: flex;
 }

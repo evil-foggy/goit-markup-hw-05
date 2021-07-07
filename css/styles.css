@@ -98,8 +98,6 @@ img {
     width: 16px;
 
     fill: var(--primary-text-color);
-
-    margin-right: 10px;
 }
 
 .page-active{
@@ -234,17 +232,8 @@ img {
     margin-right: 10px;
 }
 
-.hero-title{
-    color: var(--secondary-title-color);
-
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding-top: 200px;
-}
-
 .overlay {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid black;
@@ -630,6 +619,11 @@ text-transform: uppercase
 }
 
 .hero-title{
+    color: var(--secondary-title-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 200px 0;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -637,7 +631,7 @@ text-transform: uppercase
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-top: 0;
-    /* margin-bottom: 94px; */
+   
 }
 .button {
     cursor: pointer;
@@ -698,9 +692,6 @@ text-transform: uppercase
     margin-right: 0;
 }
 
-.img-card{
-    margin-bottom: 30px;
-}
 
 .name-title {
     margin-bottom: 10px;

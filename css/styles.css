@@ -298,6 +298,8 @@ img {
     align-items: center;
 
     margin-right: 30px;
+
+    padding: 0;
 }
 
 .features:nth-child(2)::before{
@@ -312,26 +314,20 @@ img {
     background-image: url(../images/icon/astronaut.svg);
 }
 
-.features {
-    display:  flex;
-    padding: 0;
-    justify-content: center;
-    align-items: baseline;
-} 
-
 .feature-item{
-    /* display: flex;
+    width: 270px;
+    height: 120px;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     background-color: var(--card-bg-color);
     border-radius: 4px;
 }
 
 .icon-feature{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    width: 70px;
+    height: 70px;
+} 
  
 .text{
     font-size: 14px;
